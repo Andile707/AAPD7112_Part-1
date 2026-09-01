@@ -15,6 +15,7 @@ namespace MunicipalServicesApp
         public ReportIssueForm()
         {
             InitializeComponent();
+            //select default item
             cmbCategory.SelectedIndex = 0;
         }
 
@@ -25,6 +26,7 @@ namespace MunicipalServicesApp
 
         private void ReportIssueForm_Load(object sender, EventArgs e)
         {
+            //load categories as the form loads
             cmbCategory.Items.Add("Roads");
             cmbCategory.Items.Add("Water and Sanitation");
             cmbCategory.Items.Add("Electricity");
@@ -35,13 +37,16 @@ namespace MunicipalServicesApp
             cmbCategory.SelectedIndex = -1;
         }
 
+        //Function for the progress bar
         private void UpdateProgress()
         {
             int progress = 0;
 
+            //check whether the Location textbox contains meaningful text. If it does, add 25 to the progress variable
             if (!string.IsNullOrWhiteSpace(txtLocation.Text))
                 progress += 25;
 
+            //check whether the user has selected an item from the Category ComboBox. If they have, add 25 to the progress variable.
             if (cmbCategory.SelectedIndex != -1)
                 progress += 25;
 
@@ -53,6 +58,7 @@ namespace MunicipalServicesApp
 
             progressReport.Value = progress;
 
+            //change the message displayed on progress bar depending on how much of the report the user has completed.
             if (progress == 0)
             {
                 lblProgress.Text = "Report/Request completion progress...";
@@ -70,12 +76,15 @@ namespace MunicipalServicesApp
                 lblProgress.Text = "Great! Your report is ready to submit.";
             }
         }
+
+        //Function for "Choose File" button
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             openFileDialog.Title = "Select an image or document";
 
+            //types of files the user can choose when the OpenFileDialog window opens.
             openFileDialog.Filter =
                 "Supported Files|*.jpg;*.jpeg;*.png;*.pdf;*.doc;*.docx|" +
                 "Image Files|*.jpg;*.jpeg;*.png|" +
@@ -90,6 +99,8 @@ namespace MunicipalServicesApp
                 UpdateProgress();
             }
         }
+        
+        //Function for "Submit Issue / Request" button
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             // Validation
@@ -153,6 +164,7 @@ namespace MunicipalServicesApp
             txtLocation.Focus();
         }
 
+        //Function for the "Clear" button, to clear the form
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtLocation.Clear();

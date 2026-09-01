@@ -15,6 +15,8 @@ namespace MunicipalServicesApp
         public MainMenuForm()
         {
             InitializeComponent();
+
+            //select default item
             cmbServices.SelectedIndex = 0;
         }
 
@@ -25,12 +27,14 @@ namespace MunicipalServicesApp
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //Confirm user wants to exit
             DialogResult result = MessageBox.Show(
                 "Are you sure you want to exit Municipal Services?",
                 "Exit Application",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
+            //if the user clicks yes
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
@@ -57,6 +61,7 @@ namespace MunicipalServicesApp
 
             string selectedService = cmbServices.SelectedItem.ToString();
 
+            //if the user selects "Report an Issue" then show the form
             if (selectedService == "Report an Issue")
             {
                 ReportIssueForm reportForm = new ReportIssueForm();
@@ -67,6 +72,7 @@ namespace MunicipalServicesApp
             }
             else
             {
+                //if the user selects the tasks that are currently unavailable
                 MessageBox.Show(
                     "This service is not available yet.",
                     "Coming Soon",

@@ -49,10 +49,9 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(424, 39);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Location = new System.Drawing.Point(318, 32);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(257, 16);
+            this.lblTitle.Size = new System.Drawing.Size(216, 13);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Report an Issue \\ Request a Service";
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
@@ -60,30 +59,27 @@
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
-            this.lblLocation.Location = new System.Drawing.Point(107, 81);
-            this.lblLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLocation.Location = new System.Drawing.Point(80, 66);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(61, 16);
+            this.lblLocation.Size = new System.Drawing.Size(51, 13);
             this.lblLocation.TabIndex = 1;
             this.lblLocation.Text = "Location:";
             this.lblLocation.Click += new System.EventHandler(this.lblLocation_Click);
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(106, 111);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocation.Location = new System.Drawing.Point(80, 90);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(132, 22);
+            this.txtLocation.Size = new System.Drawing.Size(100, 20);
             this.txtLocation.TabIndex = 2;
             this.txtLocation.TextChanged += new System.EventHandler(this.txtLocation_TextChanged);
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(107, 160);
-            this.lblCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCategory.Location = new System.Drawing.Point(80, 130);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(65, 16);
+            this.lblCategory.Size = new System.Drawing.Size(52, 13);
             this.lblCategory.TabIndex = 3;
             this.lblCategory.Text = "Category:";
             // 
@@ -98,59 +94,53 @@
             "Waste Collection",
             "Street Light",
             "Road Damage"});
-            this.cmbCategory.Location = new System.Drawing.Point(106, 180);
-            this.cmbCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCategory.Location = new System.Drawing.Point(80, 146);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(160, 24);
+            this.cmbCategory.Size = new System.Drawing.Size(121, 21);
             this.cmbCategory.TabIndex = 4;
             this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(107, 236);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescription.Location = new System.Drawing.Point(80, 192);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(78, 16);
+            this.lblDescription.Size = new System.Drawing.Size(63, 13);
             this.lblDescription.TabIndex = 5;
             this.lblDescription.Text = "Description:";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(106, 256);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescription.Location = new System.Drawing.Point(80, 208);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(250, 63);
+            this.txtDescription.Size = new System.Drawing.Size(188, 52);
             this.txtDescription.TabIndex = 6;
             this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
             // 
             // lblAttachment
             // 
             this.lblAttachment.AutoSize = true;
-            this.lblAttachment.Location = new System.Drawing.Point(109, 342);
-            this.lblAttachment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAttachment.Location = new System.Drawing.Point(82, 278);
             this.lblAttachment.Name = "lblAttachment";
-            this.lblAttachment.Size = new System.Drawing.Size(76, 16);
+            this.lblAttachment.Size = new System.Drawing.Size(64, 13);
             this.lblAttachment.TabIndex = 7;
             this.lblAttachment.Text = "Attachment:";
             // 
             // txtAttachment
             // 
-            this.txtAttachment.Location = new System.Drawing.Point(224, 368);
-            this.txtAttachment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAttachment.Location = new System.Drawing.Point(161, 294);
             this.txtAttachment.Name = "txtAttachment";
             this.txtAttachment.ReadOnly = true;
-            this.txtAttachment.Size = new System.Drawing.Size(285, 22);
+            this.txtAttachment.Size = new System.Drawing.Size(159, 20);
             this.txtAttachment.TabIndex = 8;
             this.txtAttachment.TextChanged += new System.EventHandler(this.txtAttachment_TextChanged);
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(106, 362);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowse.Location = new System.Drawing.Point(80, 294);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(100, 28);
+            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 9;
             this.btnBrowse.Text = "Choose File";
             this.btnBrowse.UseVisualStyleBackColor = true;
@@ -158,10 +148,9 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(387, 528);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(290, 429);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(205, 28);
+            this.btnSubmit.Size = new System.Drawing.Size(154, 23);
             this.btnSubmit.TabIndex = 10;
             this.btnSubmit.Text = "Submit Report \\ Request";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -169,10 +158,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(682, 528);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClear.Location = new System.Drawing.Point(512, 429);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(205, 28);
+            this.btnClear.Size = new System.Drawing.Size(154, 23);
             this.btnClear.TabIndex = 11;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -180,10 +168,9 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(106, 528);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Location = new System.Drawing.Point(80, 429);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(205, 28);
+            this.btnBack.Size = new System.Drawing.Size(154, 23);
             this.btnBack.TabIndex = 12;
             this.btnBack.Text = "Back to Main Menu";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -191,29 +178,27 @@
             // 
             // progressReport
             // 
-            this.progressReport.Location = new System.Drawing.Point(387, 464);
-            this.progressReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressReport.Location = new System.Drawing.Point(290, 377);
             this.progressReport.Name = "progressReport";
-            this.progressReport.Size = new System.Drawing.Size(220, 28);
+            this.progressReport.Size = new System.Drawing.Size(165, 23);
             this.progressReport.TabIndex = 13;
             // 
             // lblProgress
             // 
             this.lblProgress.AutoSize = true;
-            this.lblProgress.Location = new System.Drawing.Point(384, 435);
-            this.lblProgress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProgress.Location = new System.Drawing.Point(288, 353);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(229, 16);
+            this.lblProgress.Size = new System.Drawing.Size(181, 13);
             this.lblProgress.TabIndex = 14;
             this.lblProgress.Text = "Report\\Request completion progress";
             this.lblProgress.Click += new System.EventHandler(this.lblProgress_Click);
             // 
             // ReportIssueForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1067, 596);
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.lblProgress);
             this.Controls.Add(this.progressReport);
             this.Controls.Add(this.btnBack);
@@ -229,7 +214,6 @@
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.lblTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ReportIssueForm";
             this.Text = "ReportIssueForm";
             this.Load += new System.EventHandler(this.ReportIssueForm_Load);
